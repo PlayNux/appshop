@@ -1,6 +1,4 @@
-# AppCenter
-[![Translation status](https://l10n.elementary.io/widgets/appcenter/-/svg-badge.svg)](https://l10n.elementary.io/projects/appcenter/?utm_source=widget)
-
+# AppShop
 An open, pay-what-you-want app store for indie developers.
 
 ![AppCenter Screenshot](data/screenshot.png?raw=true)
@@ -33,14 +31,14 @@ Run `meson build` to configure the build environment. Change to the build direct
 To install, use `ninja install`, then execute with `io.elementary.appcenter`
 
     sudo ninja install
-    io.elementary.appcenter
+    io.playnux.appshop
 
 ## Debugging
 
 See debug messages:
 As specified in the [GLib documentation](https://developer.gnome.org/glib/stable/glib-running.html)
 
-    G_MESSAGES_DEBUG=all io.elementary.appcenter
+    G_MESSAGES_DEBUG=all io.playnux.appshop
 
 Show restart required messaging:
 
@@ -52,7 +50,7 @@ Hide restart required messaging:
 
 Fake updates with the `-f` flag followed by PackageKit package name, **not** appstream id:
 
-    io.elementary.appcenter -f inkscape
+    io.playnux.appshop -f inkscape
 
 Load and preview a local AppStream XML metadata file, your local metadata will show up in the featured banner and will also be searchable. Metadata loaded this way will have a `(local)` suffix in it's name.
 
